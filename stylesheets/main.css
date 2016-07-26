@@ -96,16 +96,6 @@ footer {
   .head {
     text-align: center; }
 
-  .name {
-    border: 1px solid #ccc;
-    padding: 4px 0;
-    margin-bottom: 10px; }
-
-  .info {
-    border: 1px solid #ccc;
-    padding: 4px 0;
-    margin-bottom: 10px; }
-
   .block {
     padding: 8px; }
     .block h3 {
