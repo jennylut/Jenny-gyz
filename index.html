@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="stylesheets/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="javascripts/jquery.min.js"></script>
+  <script src="javascripts/radialIndicator.js"></script>
   <script src="javascripts/bootstrap.min.js"></script>
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -17,31 +18,147 @@
 
   <header class="head clearfix">
     <div class="container">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <div class="name">
           <p class="title">Jenny Gao</p>
           <p class="small">Front End Enginner</p class="small">
         </div>
 
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <p>邮箱：2865724220@qq.com</p>
-        <p>地址：广东省广州市天河区</p>
+      <div class="col-lg-1 col-md-1"></div>
+
+      <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+        <p>
+          <span class="width60">Email：</span>
+          <span class="width150">2865724220@qq.com</span>
+        </p>
+        <p>
+          <span class="width60">Address:</span>
+          <span class="width150">Guangzhou tianhe</span>
+        </p>
       </div>
     </div>
 
   </header>
 
-  <div id="banner"></div>
+  <div id="content">
+    <div class="container">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="personIntro block">
+          <h3>Personal Infomation</h3>
+          <p>
+            <span>Name：</span>
+            <span>Jenny Gao</span>
+          </p>
+          <p>
+            <span>Gender：</span>
+            <span>female</span>
+          </p>
+          <p>
+            <span>Age:</span>
+            <span>24</span>
+          </p>
+          <p>
+            <span>Native Place：</span>
+            <span>China Henan</span>
+          </p>
+        </div>
+        <div class="personSkill block">
+          <h3>Personal Skill</h3>
+          <p>HTML</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-primary" style="width:80%"></div>
+          </div>
+          <p>CSS</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" style="width:80%"></div>
+          </div>
+          <p>Javascript</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-warning" style="width:80%"></div>
+          </div>
+          <p>JQuery</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger" style="width:80%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1"></div>
+      <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+        <div class="workExperience block">
+          <h3>Work Experience</h3>
+          <p>
+            <span>2014 07-2015 08</span>
+            <span>Guangzhou pushan</span>
+          </p>
+          <p>
+            <span>2015 11- Now</span>
+            <span>Capgemini China</span>
+          </p>
+
+        </div>
+        <div class="education block">
+          <h3>Educational Background</h3>
+          <p>
+            <span>Gradute University:</span>
+            <span>LUT(Lan Zhou university of technology)</span>
+          </p>
+          <p>
+            <span>Major:</span>
+            <span>Computer science and technology</span>
+          </p>
+          <p>
+            <span>Gradute Time:</span>
+            <span>2014 06</span>
+          </p>
+          <p>
+            <span>Academic Qualifications:</span>
+            <span>Bachelor's degree</span>
+          </p>
+        </div>
+        <div class="language block">
+          <h3>Language level</h3>
+          <div class="tabCen">
+            <div id="en" class="circle">
+              <span>English</span>
+            </div>
+            <div id="Zh" class="circle">
+              <span>Mandarin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- end banner -->
 
-  <div class="wrapper">
+  <footer></footer>
 
-    <footer></footer>
-  </div>
   <!--[if !IE]>
   <script>fixScale(document);</script>
   <![endif]-->
 
 </body>
+  <script type="text/javascript">
+  $('#en').radialIndicator({
+        radius:60,
+        barColor: '#f00',
+        barWidth: 5,
+        initValue: 70,
+        displayNumber: false
+
+        // roundCorner : true
+        // percentage: true
+    });
+    $('#Zh').radialIndicator({
+        radius:60,
+        barColor: '#f0ad4e',
+        barWidth: 5,
+        initValue: 100,
+        displayNumber: false
+
+        // roundCorner : true
+        // percentage: true
+    });  
+</script>
 </html>
