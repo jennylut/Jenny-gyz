@@ -108,6 +108,26 @@ footer{
 	.head{
 		text-align: center;
 	}
+	.name {
+		border: 1px solid #ccc;
+		padding: 4px 0;
+		margin-bottom: 10px;
+	}
+	.info{
+		border: 1px solid #ccc;
+		padding: 4px 0;
+		margin-bottom: 10px;
+	}
+	.block{
+		padding:8px;
+		h3{
+			font-size:20px;
+		}
+	}
+	.circle{
+		display: block;
+		margin-bottom:20px;
+	}
 	
 }
 
