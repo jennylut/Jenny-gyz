@@ -96,6 +96,9 @@ footer {
   .head {
     text-align: center; }
 
+  span.width60 {
+    text-align: right; }
+
   .block {
     padding: 8px; }
     .block h3 {
